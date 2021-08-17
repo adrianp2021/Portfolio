@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import 'semantic-ui-react'
-import bulma from 'bulma'
+// import bulma from 'bulma'
 
 import './styles/main.scss'
 import App from './App'
