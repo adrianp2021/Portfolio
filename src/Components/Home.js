@@ -1,8 +1,10 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/anchor-has-content */
 // eslint-disable-next-line
 import React from 'react'
 import arrow from '../images/arrow.png'
-import github from '../images/github.png'
-import linkedin from '../images/linkedin.png'
+// import github from '../images/github.png'
+// import linkedin from '../images/linkedin.png'
 import snake from '../project/snake.jpeg'
 import github1 from '../images/github1.png'
 import link from '../images/link.png'

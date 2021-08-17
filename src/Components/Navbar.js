@@ -1,5 +1,5 @@
+/* eslint-disable jsx-a11y/no-redundant-roles */
 import React from 'react'
-import logo from '../images/title.png'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
