@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <Link to="/">
-        <div className="logo-box">Adrian<span>Pantea</span></div>
+        <p className="logo-box"><span>Adrian Pantea</span></p>
       </Link>
 
       <section className="navbar-end right-navbar">
@@ -24,11 +24,6 @@ const Navbar = () => {
           </Link>
         </div>
       </section>
-      <button role="button" className="navbar-burger" aria-label="menu" aria-expanded="false">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </button>
     </nav>
   )
 }
