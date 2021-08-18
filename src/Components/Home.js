@@ -2,7 +2,6 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 // eslint-disable-next-line
 import React from 'react'
-import arrow from '../images/arrow.png'
 // import github from '../images/github.png'
 // import linkedin from '../images/linkedin.png'
 import snake from '../project/snake.jpeg'
@@ -19,8 +18,8 @@ const Home = () => {
         <div className="landing-box">
           <div className="container-hello">
             <p className=" title is-1 hello-there">
-              Hello. <br></br>
-              I am a<span>Web Developer</span><span className="syncopate">.</span>
+              Hello<span className="syncopate">.</span> <br></br>
+              I am a <span> Web Developer</span><span className="syncopate">.</span>
               <div className="span-glitch">
               </div>
             </p>
@@ -64,8 +63,7 @@ const Home = () => {
                   <li><a href="https://github.com/adrianp2021/SEI-Project-1" rel="noreferrer" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
                   <li><a href="https://adrianp2021.github.io/SEI-Project-1/" rel="noreferrer" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a></li>
                 </ul>
-                {/* <a href="https://github.com/adrianp2021/SEI-Project-1" rel="noreferrer" target="_blank"><img className="links-image" alt="" src={github1}></img></a>
-                <a href="https://adrianp2021.github.io/SEI-Project-1/" rel="noreferrer" target="_blank"><img className="links-image" alt="" src={link}></img></a> */}
+
               </div>
             </div>
           </section>
@@ -74,7 +72,7 @@ const Home = () => {
             <div className="project-two" data-aos="fade-left">
               <div className="project-number-name">
                 <h3 data-aos="fade-up">Project 2</h3>
-                {/* </div> */}
+
                 <div>
                   <a href="https://drinkard.netlify.app/" rel="noreferrer" target="_blank">
                     <h2 className="project-name" data-aos="fade-down">Drinkard</h2>
@@ -124,8 +122,7 @@ const Home = () => {
                 <p class="libraries-technologies ">React</p>
               </div>
               <div class="app-links">
-                {/* <a href="https://github.com/adrianp2021/SEI-Project-3" rel="noreferrer" target="_blank"><img className="links-image" alt="" src={github1}></img></a>
-                <a href="https://whispering-coast-70189.herokuapp.com/" rel="noreferrer" target="_blank"><img className="links-image" alt="" src={link}></img></a> */}
+
                 <ul>
                   <li><a href="https://github.com/adrianp2021/SEI-Project-3" rel="noreferrer" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
                   <li><a href="https://whispering-coast-70189.herokuapp.com/" rel="noreferrer" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a></li>
