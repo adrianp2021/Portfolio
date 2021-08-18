@@ -162,7 +162,25 @@ const Home = () => {
           </section>
         </div>
       </section>
-      <section id="about" class="page-section about-section"></section>
+{/* 
+      <section id="connect" className="page-section about-section">
+
+        <div className="left-connect-div">
+          <h1 className="let-connect">Feel free to connect</h1>
+          <p className="connect-copyrights">© 2021 Adrian Pantea </p>
+          
+        </div>
+
+        <div className="right-connect-div">
+              <div id="connect-social"><a className="connect-social-links" href="mailto:adrianpantea10@gmail.com">Email</a></div>
+              <div id="connect-social"><a className="connect-social-links"  href="https://github.com/adrianp2021" rel="noreferrer" target="_blank">Github</a></div>
+              <div id="connect-social"><a className="connect-social-links"  href="https://twitter.com/AdrianPantea4" rel="noreferrer" target="_blank">Twitter</a></div>
+              <div id="connect-social"><a className="connect-social-links"  href="https://www.linkedin.com/in/adrian-pantea/" rel="noreferrer" target="_blank">LinkedIn</a></div>
+        </div>
+
+      </section> */}
+
+      {/* <section id="about" class="page-section about-section"></section> */}
     </>
   )
 }

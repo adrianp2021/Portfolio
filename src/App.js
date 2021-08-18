@@ -16,22 +16,17 @@ const App = () => {
 
       <Switch>
 
-
       <Route path="/about">
           <About />
         </Route>
-
 
       <Route path="/contact">
           <Contact />
         </Route>
 
-
         <Route path="/">
           <Home />
         </Route>
-
-
 
       </Switch>
       <Footer />

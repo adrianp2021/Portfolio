@@ -13,12 +13,12 @@ const Navbar = () => {
 
       <section className="navbar-end right-navbar">
         <div className="navbar-item">
-        <Link to="/">
-          <a className="nav-items" href="#home" title="home">HOME</a>
+          <Link to="/">
+            <a className="nav-items" href="#home" title="home">HOME</a>
           </Link>
           <a className="nav-items" href="#projects" title="home">PROJECTS</a>
           <Link to="/about">
-          <a className="nav-items" href="#about" title="home">ABOUT</a>
+            <a className="nav-items" href="#about" title="home">ABOUT</a>
           </Link>
           <Link to="/contact">
             <a className="nav-items" id="right-navbar-content" href="#contact" title="home">CONTACT</a>
