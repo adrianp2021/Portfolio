@@ -19,7 +19,7 @@ const Home = () => {
           <div className="container-hello">
             <p className=" title is-1 hello-there">
               Hello<span className="syncopate">.</span> <br></br>
-              I am a <span> Web Developer</span><span className="syncopate">.</span>
+              I am a <span> Junior Web Developer</span><span className="syncopate">.</span>
               <div className="span-glitch">
               </div>
             </p>
