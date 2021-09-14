@@ -34,6 +34,7 @@ import tableplus from '../images/tableplus.png'
 import next from '../images/next.png'
 import ga from '../images/general.png'
 import depinna from '../images/depinna.png'
+import vue from '../images/vue.png'
 
 
 
@@ -108,6 +109,8 @@ const Home = () => {
 
           <h1>currently learning</h1>
           <img className="skill1" alt="" src={next}></img>
+          <img className="skill1" alt="" src={vue}></img>
+
         </div>
       </section>
 
