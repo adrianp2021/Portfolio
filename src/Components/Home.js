@@ -302,13 +302,13 @@ const Home = () => {
         <div className="left-connect-div">
           <img className="logo-about" src={logo1} alt=""></img>
           <h1 className="let-connect">or feel free to connect.</h1>
-          <p className="connect-copyrights">© 2021 Adrian Pantea </p>
+          <p className="connect-copyrights">© 2021 Adrian Pantea</p>
         </div>
         <div className="right-connect-div">
-          <div id="connect-social"><a className="connect-social-links" href="mailto:adrianpantea10@gmail.com">Email</a></div>
-          <div id="connect-social"><a className="connect-social-links" href="https://github.com/adrianp2021" rel="noreferrer" target="_blank">Github</a></div>
-          <div id="connect-social"><a className="connect-social-links" href="https://twitter.com/AdrianPantea4" rel="noreferrer" target="_blank">Twitter</a></div>
-          <div id="connect-social"><a className="connect-social-links" href="https://www.linkedin.com/in/adrian-pantea/" rel="noreferrer" target="_blank">LinkedIn</a></div>
+          <div id="connect-social"><a className="connect-social-links render" href="mailto:adrianpantea10@gmail.com">Email</a></div>
+          <div id="connect-social"><a className="connect-social-links render" href="https://github.com/adrianp2021" rel="noreferrer" target="_blank">Github</a></div>
+          <div id="connect-social"><a className="connect-social-links render" href="https://twitter.com/AdrianPantea4" rel="noreferrer" target="_blank">Twitter</a></div>
+          <div id="connect-social"><a className="connect-social-links render" href="https://www.linkedin.com/in/adrian-pantea/" rel="noreferrer" target="_blank">LinkedIn</a></div>
         </div>
       </section>
 

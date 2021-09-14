@@ -78,6 +78,9 @@ html{
   letter-spacing: 1px;
   font-family: 'Montserrat', sans-serif;
   font-size: 25px;
+  &:hover{
+    color:#8a8a8a;
+  }
 }
 
 .page-section{
@@ -88,12 +91,22 @@ html{
 .logo, .logo-about{
   width:100px;
   height: 100px;
-  transition: background-color 0.5s ease;
-}
-.logo-about:hover{
-  transform: rotate(180deg);
 }
 
+.logo:hover, .logo-about:hover{
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function:linear; 
+}
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
 
 .description-h3{
   margin-top: 25px;
