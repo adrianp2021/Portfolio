@@ -10,7 +10,7 @@ import crumble from '../project/crumble.jpeg'
 // import adrian from '../images/adrian.jpg'
 import logo1 from '../images/triangle.png'
 import logo from '../images/triangle-logo.png'
-// import logo2 from '../images/triangle-logo1.png'
+
 import css from '../images/css.png'
 import html from '../images/html.png'
 import js from '../images/js.png'
@@ -35,8 +35,6 @@ import next from '../images/next.png'
 import ga from '../images/general.png'
 import depinna from '../images/depinna.png'
 import vue from '../images/vue.png'
-
-
 
 
 const Home = () => {
@@ -79,38 +77,126 @@ const Home = () => {
         </div>
 
         <div className="skills">
-          <h1>web development skills</h1>
+          <h1>web development skills:</h1>
+
           <div className="skills-set">
-            <img className="skill" alt="" src={css}></img>
-            <img className="skill" alt="" src={html}></img>
-            <img className="skill" alt="" src={js}></img>
-            <img className="skill" alt="" src={bulma}></img>
-            <img className="skill" alt="" src={react}></img>
-            <img className="skill" alt="" src={mongodb}></img>
-            <img className="skill" alt="" src={nodejs}></img>
-            <img className="skill" alt="" src={python}></img>
-            <img className="skill" alt="" src={sass}></img>
-            <img className="skill" alt="" src={semantic}></img>
-            <img className="skill" alt="" src={django}></img>
+            <div className="skill-names">
+              <p>CSS</p>
+              <img className="skill" alt="" src={css}></img>
+            </div>
+            <div className="skill-names">
+              <p>HTML</p>
+              <img className="skill" alt="" src={html}></img>
+            </div>
+            <div className="skill-names">
+              <p>JavaScript</p>
+              <img className="skill" alt="" src={js}></img>
+            </div>
+            <div className="skill-names">
+              <p>Bulma</p>
+              <img className="skill" alt="" src={bulma}></img>
+            </div>
+
+            <div className="skill-names">
+              <p>React</p>
+              <img className="skill" alt="" src={react}></img>
+            </div>
+
+            <div className="skill-names">
+              <p>MongoDB</p>
+              <img className="skill" alt="" src={mongodb}></img>
+            </div>
+
+            <div className="skill-names">
+              <p>Node.js</p>
+              <img className="skill" alt="" src={nodejs}></img>
+            </div>
+
+            <div className="skill-names">
+              <p>Python</p>
+              <img className="skill" alt="" src={python}></img>
+            </div>
+
+            <div className="skill-names">
+              <p>Sass</p>
+              <img className="skill" alt="" src={sass}></img>
+            </div>
+
+            <div className="skill-names">
+              <p>Semantic UI</p>
+              <img className="skill" alt="" src={semantic}></img>
+            </div>
+
+            <div className="skill-names">
+              <p>Django</p>
+              <img className="skill" alt="" src={django}></img>
+            </div>
           </div>
 
-          <h1>management tools</h1>
+          <h1>management tools:</h1>
           <div>
-            <img className="skill" alt="" src={npm}></img>
-            <img className="skill" alt="" src={yarn}></img>
-            <img className="skill" alt="" src={git}></img>
-            <img className="skill" alt="" src={github}></img>
-            <img className="skill" alt="" src={slack}></img>
-            <img className="skill" alt="" src={insomnia}></img>
-            <img className="skill" alt="" src={vscode}></img>
-            <img className="skill" alt="" src={trello}></img>
-            <img className="skill" alt="" src={tableplus}></img>
+
+            <div className="skills-set">
+              <div className="skill-names">
+                <p>NPM</p>
+                <img className="skill" alt="" src={npm}></img>
+              </div>
+
+              <div className="skill-names">
+                <p>Yarn</p>
+                <img className="skill" alt="" src={yarn}></img>
+              </div>
+
+              <div className="skill-names">
+                <p>Git</p>
+                <img className="skill" alt="" src={git}></img>
+              </div>
+
+              <div className="skill-names">
+                <p>Github</p>
+                <img className="skill" alt="" src={github}></img>
+              </div>
+
+              <div className="skill-names">
+                <p>Slack</p>
+                <img className="skill" alt="" src={slack}></img>
+              </div>
+
+              <div className="skill-names">
+                <p>Insomnia</p>
+                <img className="skill" alt="" src={insomnia}></img>
+              </div>
+
+              <div className="skill-names">
+                <p>VS Code</p>
+                <img className="skill" alt="" src={vscode}></img>
+              </div>
+
+              <div className="skill-names">
+                <p>Trello</p>
+                <img className="skill" alt="" src={trello}></img>
+              </div>
+
+              <div className="skill-names">
+                <p>TablePlus</p>
+                <img className="skill" alt="" src={tableplus}></img>
+              </div>
+            </div>
           </div>
 
-          <h1>currently learning</h1>
-          <img className="skill1" alt="" src={next}></img>
-          <img className="skill1" alt="" src={vue}></img>
 
+          <h1>currently learning:</h1>
+          <div className="skills-set">
+            <div className="skill-names">
+              <p>Next.js</p>
+              <img className="skill1" alt="" src={next}></img>
+            </div>
+
+            <div className="skill-names">
+              <p>Vue.js</p>
+              <img className="skill1" alt="" src={vue}></img>
+            </div>
+          </div>
         </div>
       </section>
 
