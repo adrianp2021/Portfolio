@@ -4,16 +4,13 @@ body {
   margin:0;
   padding: 0;
 }
+
 html{
   scroll-behavior: smooth;
 }
-#root{
-  background: white;
-}
-
 .navbar{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   background-color: #000;
 }
@@ -23,10 +20,8 @@ html{
 }
 
 .landing-box{
-  display: flex;
-  flex-direction: column;
-  align-items:flex-start;
-  justify-content: center;
+  width: 20%;
+  height: 400px;
 }
 
 .landing-box h2{
@@ -42,8 +37,8 @@ html{
   font-size: 2.4rem;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 3px;
-  transform: scaleY(1.1);
 }
+
 #landing{
   background-color: rgb(0, 0, 0);
   background-image: url('../images/shadow.jpeg');
@@ -95,15 +90,6 @@ html{
   animation-iteration-count: infinite;
   animation-timing-function:linear; 
   margin-top: 20px;
-}
-
-@keyframes spin {
-  from {
-      transform:rotate(0deg);
-  }
-  to {
-      transform:rotate(360deg);
-  }
 }
 
 .description-h3{
@@ -165,26 +151,10 @@ html{
   transform: scale(0.1, 1);
 }
 
-@media (max-width: 800px){
-  .page-section{
-    width: 100%;
-    min-height: 30vh;
-  }
-  .hello-there{
-    font-size: 1.4rem;
-  }
-  .landing-box{
-    width: 300px;
-    height: 300px;
-  }
-}
-
-
-// ! PROJECT PAGE 
+// PROJECT PAGE 
 
 #projects{
   background: #ffffff;
-
   background-size: cover;
   background-position:bottom;
   background-attachment:fixed; 
@@ -347,50 +317,6 @@ img{
 }
 
 
-@media (max-width: 700px) {
-  .project-card{
-    display: block;
-    width: 250px;
-    height: 450px;
-  }
-  .image-links{
-    width: 250px;
-    height: 200px;
-  }
-  .project-description p{
-    font-size: 7.5px;
-    padding: 10px;
-  }
-  .app-links {
-    width: 4px;
-    display: flex;
-    flex-direction: column;
-  }
-  .app-links ul{
-    width: 1px;
-    height: 1px;
-    margin-left: -40px;
-  }
-  .project-name{
-    font-size: 18px;
-  }
-  .project-number-name{
-    font-size: 8px;
-  }
-  .libraries-technologies{
-    font-size: 7px;
-    margin-left: 10px;
-    text-align: left;
-    margin-right: 2px;
-  }
-}
-
-
-
-
-
-
-
 // CONTACT
 
 #contact{
@@ -473,43 +399,10 @@ button:hover{
   font-size: 3rem;
 }
 
-@media (max-width: 700px){
-  .contact-message{
-    font-size: 30px;
-  }
-  .top-form{
-    width: 10px;
-    // height: 40px;
-    display: block;
-    margin-left: 330px;
-  }
-  .contact-form-name{
-    margin-bottom: 10px;
-    width: 300px;
-    height: 40px;
-  }
-  .contact-form-text{
-    width: 300px;
-    // height: 40px;
-    display: block;
-    margin-left: 330px; 
-  }
-  button{
-  margin-left: 330px;
-  }
-  .get-in-touch{
-    display: block;
-  }
-}
-
-#image-sections{
-  height: 60vh;
-  transform: skewY(1deg);
-}
 
 #about-experience-image{
   height: 50vh;
-  transform: skewY(-2deg);
+  // transform: skewY(-2deg);
 }
 
 .image-between-sections{
@@ -527,7 +420,7 @@ button:hover{
 }
 
 
-// ! CONNECT
+//  CONNECT
 
 #connect{
   background: rgb(0, 0, 0);
@@ -581,29 +474,42 @@ button:hover{
   margin-top: 110px;
 }
 
-// ! CONNECT
+// CONNECT
 
-// ! ABOUT
+// ABOUT
 #about{
-  background: rgb(255, 255, 255);
-  margin: 0;
-  padding: 0;
-  color:rgb(5, 5, 5);
+  background: #ffffff;
+  // padding: 10px;
+  color:rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Montserrat', sans-serif;
-  transform: skewX(2deg);
+}
+
+.wrapper-about{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  height: 80vh;
+}
+.wrapper-about > div{
+  background: rgb(255, 255, 255);
+  padding: 1em;
+  border: 1px solid rgb(255, 255, 255);
+  color:rgb(0, 0, 0);
+  margin-left: 40px;
+  margin-right: 40px;
+
+}
+.wrapper-about > div:nth-child(odd){
+  background: #666;
+  border: 1px solid wheat;
 }
 
 
-.about-introduction-left{
-  width: 500px;
-  height: 600px;
-  padding: 100px;
-}
 .about-introduction-left h1{
-  font-size: 3.8rem;
+  width: 500px;
+  font-size: 2.8rem;
 }
 
 .about-introduction-paragraph{
@@ -614,98 +520,37 @@ button:hover{
   background: black;
 }
 
-.skills{
-  // width:50%;
-  height: 500px;
-  border: 2px solid white;
-  
-}
 
 .skill{
   width: 50px;
-  height: 50px;
+  height: 40px;
+  padding: 15px;
+
+}
+
+.learn{
+  margin-top: 50px;
+}
+.skill-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.web-development{
+  display: flex;
   margin-right: 10px;
-  margin-left: 14px;
-  transition: all .1s ease-in-out;
+  color:black;
 }
-
-.skill1{
-  width: 70px;
-  height: 50px;
-  margin-left: 8px;
-}
-
-.skills h1{
-font-size: 1.6rem;
-text-decoration:underline;
-}
-
-.skills-set{
+.skill-name{
   display: flex;
-  flex-grow: 1;
-}
-
-.skill-set{
-  width: 55px;
-  height: 55px;
-  margin-bottom: 15px;
-}
-
-.skill-names{
-  width: 80px;
-  margin-bottom: 10px;
-
-}
-
-.skill-names p{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-
-@media (max-width: 800px){
-  #about{
-    display: flex;
-    // justify-content: center;
-    flex-direction: column-reverse;
-    align-items:center;
-  }
-  .adrian-photo{
-    width: 200px;
-    height: 200px;
-    margin-top: 80px;
-  }
-  .about-introduction{
-    width: 500px;
-  }
-  .about-hello{
-    font-size: 100px;
-  }
-  .about-introduction-paragraph{
-    font-size: 20px;
-  }
-  .button-up{
-    display: none;
-  }
-}
-
-
-#skills{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  color: white;
-  transform: skewY(-2deg);
-}
-
-.skills-title{ 
-  color:#ffffff;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3.8rem;
-}
 
 .experience{
   margin-left: 5%;
@@ -719,7 +564,6 @@ text-decoration:underline;
   justify-content: center;
   align-items: center;
   margin-top: 80px;
-
 }
 
 .general-assembly, .de-pinna{
