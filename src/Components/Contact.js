@@ -24,71 +24,71 @@ const Contact = () => {
           &lt; get in touch /&gt;
         </h1>
 
-        <form
-          action="https://formspree.io/f/xdoypozv"
-          method="POST"
-          className="contact-form"
-        >
-          <input
-            name="firstName"
-            type="text"
-            placeholder="First name"
-            value={formValue.firstName}
-            minLength="2"
-            required=""
-            aria-required="true"
-            className="contact-form-name"
-            onChange={handleFormChange}
-          />
-          <input
-            name="lastName"
-            type="text"
-            placeholder="Last name"
-            value={formValue.lastName}
-            minLength="2"
-            required=""
-            aria-required="true"
-            className="contact-form-name"
-            onChange={handleFormChange}
-          />
-          <input
-            name="contactEmail"
-            type="email"
-            id="contactEmail"
-            placeholder="email"
-            value={formValue.contactEmail}
-            required=""
-            aria-required="true"
-            className="contact-form-text"
-            onChange={handleFormChange}
-          />
-          <input
-            name="subject"
-            type="text"
-            id="contactSubject"
-            placeholder="Subject"
-            value={formValue.subject}
-            className="contact-form-text"
-            onChange={handleFormChange}
-            required
-          />
-          <textarea
-            name="message"
-            id="contactMessage"
-            placeholder="message"
-            rows="10"
-            cols="50"
-            required=""
-            aria-required="true"
-            className="contact-form-text"
-            styles="resize: none"
-            value={formValue.message}
-            onChange={handleFormChange}
-          ></textarea>
-          <button className="button-contact" type="submit">
-            Send
-          </button>
-        </form>
+          <form
+            action="https://formspree.io/f/xdoypozv"
+            method="POST"
+            className="contact-form"
+          >
+            <input
+              name="firstName"
+              type="text"
+              placeholder="first name"
+              value={formValue.firstName}
+              minLength="2"
+              required=""
+              aria-required="true"
+              className="contact-form-name"
+              onChange={handleFormChange}
+            />
+            <input
+              name="lastName"
+              type="text"
+              placeholder="last name"
+              value={formValue.lastName}
+              minLength="2"
+              required=""
+              aria-required="true"
+              className="contact-form-name"
+              onChange={handleFormChange}
+            />
+            <input
+              name="contactEmail"
+              type="email"
+              id="contactEmail"
+              placeholder="email"
+              value={formValue.contactEmail}
+              required=""
+              aria-required="true"
+              className="contact-form-text"
+              onChange={handleFormChange}
+            />
+            <input
+              name="subject"
+              type="text"
+              id="contactSubject"
+              placeholder="subject"
+              value={formValue.subject}
+              className="contact-form-text"
+              onChange={handleFormChange}
+              required
+            />
+            <textarea
+              name="message"
+              id="contactMessage"
+              placeholder="message"
+              rows="10"
+              cols="50"
+              required=""
+              aria-required="true"
+              className="contact-form-text"
+              styles="resize: none"
+              value={formValue.message}
+              onChange={handleFormChange}
+            ></textarea>
+            <button className="button-contact" type="submit">
+              send
+            </button>
+          </form>
       </div>
     </section>
   );

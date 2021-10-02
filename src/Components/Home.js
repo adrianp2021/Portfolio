@@ -1,10 +1,8 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable jsx-a11y/anchor-has-content */
-// eslint-disable-next-line
-import React, { useState } from "react";
+
+import React from "react";
 
 import Skills from "../Components/skills.js";
-import Management from "./management.js";
+import Management from '../Components/Management.js';
 import About from "./About.js";
 import Experience from "./Experience.js";
 import ProjectCard1 from "./ProjectCard1.js";
@@ -12,26 +10,9 @@ import ProjectCard2 from "./ProjectCard2.js";
 import ProjectCard3 from "./ProjectCard3.js";
 import ProjectCard4 from "./ProjectCard4.js";
 import Contact from "./Contact.js";
-
-// import plant from '../images/plant.jpeg'
+import Connect from "./Connect.js";
 
 const Home = () => {
-  const [formValue, setFormValue] = useState({
-    firstName: "",
-    lastName: "",
-    contactEmail: "",
-    subject: "",
-    message: "",
-  });
-
-  function handleFormChange(e) {
-    setFormValue({
-      ...formValue,
-      [e.target.name]: e.target.value,
-    });
-    console.log(formValue);
-  }
-
   return (
     <>
       <section className="page-section" id="landing">
@@ -85,11 +66,9 @@ const Home = () => {
         </div>
       </section>
 
-      {/* <section id="image-sections" className="image-between-sections">{plant}</section> */}
+      <Contact />
 
-
-<Contact />
-
+      <Connect />
 
       {/* <section id="connect" className="about-section">
         <div className="left-connect-div">

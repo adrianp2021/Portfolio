@@ -34,7 +34,7 @@ const ProjectCard3 = () => {
           for me during this project.
         </p>
       </div>
-      <div class="libraries">
+      <div className="libraries">
         <p class="libraries-technologies ">Node.js</p>
         <p class="libraries-technologies ">Express</p>
         <p class="libraries-technologies ">MongoDB</p>

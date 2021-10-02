@@ -34,7 +34,7 @@ const ProjectCard2 = () => {
           glass, it will direct him/her to the cocktails page.
         </p>
       </div>
-      <div class="libraries">
+      <div className="libraries">
         <p className="libraries-technologies ">HTML/CSS</p>
         <p className="libraries-technologies ">React.js</p>
         <p className="libraries-technologies ">Axios</p>
