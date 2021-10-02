@@ -32,7 +32,7 @@ const skills = () => {
     },
     {
       name: "Python",
-      link: "http://assets.stickpng.com/images/5848152fcef1014c0b5e4967.png",
+      link: "https://img.pngio.com/python-programming-language-icon-transparent-png-svg-vector-python-png-512_512.png",
     },
     {
       name: "Sass",
@@ -44,7 +44,7 @@ const skills = () => {
     },
     {
       name: "Django",
-      link: "https://img.pngio.com/django-web-development-web-framework-python-software-framework-django-png-550_550.png",
+      link: "https://seeklogo.com/images/D/django-logo-4C5ECF7036-seeklogo.com.png",
     },
     {
       name: "PostgreSQL",
@@ -54,19 +54,18 @@ const skills = () => {
 
   return (
     <div className="skills">
-      <h1>programming skills:</h1>
+      <h1>Programming skills:</h1>
       <div className="web-development">
-        {logoImages.map((image, i) => {
-          return (
-            <>
-              <div key={i} />
-              <div className="skill-name">
-                <img src={image.link} className="skill" alt="img" />
-                <p>{image.name}</p>
-              </div>
-            </>
-          );
-        })}
+      {logoImages.map((image, i) => {
+        return (
+          <>
+            <div className="skill-name" key={i}>
+              <img src={image.link} className="skill" alt="img" />
+              <p>{image.name}</p>
+            </div>
+          </>
+        );
+      })}
       </div>
     </div>
   );

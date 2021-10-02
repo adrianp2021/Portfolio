@@ -1,75 +1,63 @@
-// import React from "react";
+import React from "react";
 
-// const Management = () => {
-//   const logoImages = [
-//     {
-//       name: "CSS 3",
-//       link: "https://cdn-icons-png.flaticon.com/512/732/732190.png",
-//     },
-//     {
-//       name: "HTML 5",
-//       link: "https://cdn-icons-png.flaticon.com/512/174/174854.png",
-//     },
-//     {
-//       name: "JavaScript",
-//       link: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
-//     },
-//     {
-//       name: "Bulma",
-//       link: "https://iconape.com/wp-content/files/df/370667/svg/370667.svg",
-//     },
-//     {
-//       name: "React",
-//       link: "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-256.png",
-//     },
-//     {
-//       name: "MongoDB",
-//       link: "https://img2.pngio.com/mongodb-logo-mongodb-inc-png-2000_1379.png",
-//     },
-//     {
-//       name: "Node.js",
-//       link: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/320px-Node.js_logo.svg.png",
-//     },
-//     {
-//       name: "Python",
-//       link: "http://assets.stickpng.com/images/5848152fcef1014c0b5e4967.png",
-//     },
-//     {
-//       name: "Sass",
-//       link: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1200px-Sass_Logo_Color.svg.png",
-//     },
-//     {
-//       name: "Semantic UI",
-//       link: "https://react.semantic-ui.com/logo.png",
-//     },
-//     {
-//       name: "Django",
-//       link: "https://img.pngio.com/django-web-development-web-framework-python-software-framework-django-png-550_550.png",
-//     },
-//     {
-//       name: "PostgreSQL",
-//       link: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png",
-//     },
-//   ];
+const Management = () => {
+  const logoImages = [
+    {
+      name: "npm",
+      link: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/1200px-Npm-logo.svg.png'
+    },
+    {
+      name: "Yarn",
+      link: 'https://w1.pngwing.com/pngs/798/531/png-transparent-react-logo-npm-javascript-package-manager-nodejs-github-installation-yarn.png'
+    },
+    {
+      name: "Git",
+      link: 'https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png'
+    },
+    {
+      name: "Github",
+      link: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png'
+    },
+    {
+      name: "Slack",
+      link: 'https://cdn.freebiesupply.com/logos/large/2x/slack-logo-icon.png',
+    },
+    {
+      name: "Insomnia",
+      link: "https://s3.amazonaws.com/s3.roaringapps.com/assets/icons/1561251841927-Insomnia.png",
+    },
+    {
+      name: "VS Code",
+      link: 'https://cdn.freebiesupply.com/logos/thumbs/2x/visual-studio-code-logo.png',
+    },
+    {
+      name: "Trello",
+      link: "http://assets.stickpng.com/images/58482beecef1014c0b5e4a36.png",
+    },
+    {
+      name: "TablePlus",
+      link: "link: 'https://tableplus.com/resources/favicons/apple-icon.png'",
+    },
+  ];
 
-//   return (
-//     <div className="skills">
-//       <h1>web development skills:</h1>
-//       <div className="web-development">
-//         {logoImages.map((image, i) => {
-//           return (
-//             <>
-//               <div key={i} />
-//               <div className="skill-name">
-//                 <img src={image.link} className="skill" alt="img" />
-//                 <p>{image.name}</p>
-//               </div>
-//             </>
-//           );
-//         })}
-//       </div>
-//     </div>
-//   );
-// };
+  return (
+    <div className="skills">
+      <h1>Management tools:</h1>
+      <div className="web-development">
+        {logoImages.map((image, i) => {
+          return (
+            <>
+              <div key={i}/>
+              <div className="skill-name">
+                <img src={image.link} className="skill" alt="img" />
+                <p>{image.name}</p>
+              </div>
+            </>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
 
-// export default Management;
+export default Management;
