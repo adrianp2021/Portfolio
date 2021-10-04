@@ -1,5 +1,5 @@
 import React from "react";
-import Skills from "./skills.js";
+import Skills from "./Skills.js";
 import Management from "./Management.js";
 
 const About = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 
-const skills = () => {
+const Skills = () => {
   const logoImages = [
     {
       name: "CSS 3",
@@ -54,7 +54,7 @@ const skills = () => {
 
   return (
     <section className="section-box">
-      <div className="skills">
+      <div className="S">
         <p id="span">Programming skills:</p>
         <div className="web-development">
           {logoImages.map((image, i) => {
@@ -73,4 +73,4 @@ const skills = () => {
   );
 };
 
-export default skills;
+export default Skills;
