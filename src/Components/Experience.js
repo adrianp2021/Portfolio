@@ -5,12 +5,13 @@ import depinna from "../images/depinna.png";
 
 const Experience = () => {
   return (
-    <section className="page-section">
-      <h1 id="section-title" className="owner">
-        &lt; experience /&gt;
-      </h1>
+    <section className="page-section" id="experience-container">
+      <div className="section-box" id="experience-box">
+        <h2 id="section-title" className="owner">
+          &lt; experience /&gt;
+        </h2>
 
-      <div className="work-experience">
+        <div className="work-experience">
         <div className="work-box">
           <img id="work-logo" src={depinna} alt=""></img>
           <h2>Multilingual Paralegal</h2>
@@ -36,6 +37,7 @@ const Experience = () => {
             refine and plan our projects.
           </p>
         </div>
+      </div>
       </div>
     </section>
   );

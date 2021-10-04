@@ -4,42 +4,25 @@ import snake from "../project/snake.jpeg";
 const ProjectCard1 = () => {
   return (
     <div className="project-card">
-      <div>
+      <div className="project-info">
         <a
           href="https://adrianp2021.github.io/SEI-Project-1/"
-          target="_blank"
           rel="noreferrer"
+          target="_blank"
         >
-          <img className="project-image" src={snake} alt=""></img>
+          <h1>Snake</h1>
         </a>
-      </div>
-      <div className="project-info">
-        <h2>Project 1</h2>
-        <div>
-          <a
-            href="https://adrianp2021.github.io/SEI-Project-1/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <h2>Snake</h2>
-          </a>
-        </div>
-      </div>
-      <div className="project-description">
+
         <p>
           Snake is a childhood classic, and recreating it provided me with the
-          opportunity to cement my JavaScript skills and recreating the game was
-          an excellent learning curve. The game will automatically start on the
-          load page and once the snake dies, it can be brought back to life by
-          pressing the Enter key. If it loses all 3 lives then it is game over.
+          opportunity to further cement my <span id="span">JavaScript</span>,
+          <span id="span"> HTML</span> and <span id="span">CSS</span> skills and
+          recreating the game was an excellent learning curve. The game will
+          automatically start on the load page and once the snake dies, it can
+          be brought back to life by pressing the Enter key. If it loses all 3
+          lives then it is game over.
         </p>
-      </div>
-      <div className="libraries">
-        <p className="libraries-technologies">HTML</p>
-        <p className="libraries-technologies">CSS</p>
-        <p className="libraries-technologies">JavaScript</p>
-      </div>
-      <div className="app-links">
+
         <ul>
           <li>
             <a
@@ -60,6 +43,18 @@ const ProjectCard1 = () => {
             </a>
           </li>
         </ul>
+      </div>
+
+      <div>
+        <a
+          href="https://adrianp2021.github.io/SEI-Project-1/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className="img-hover-zoom img-hover-zoom--colorize">
+            <img src={snake} alt="" className="project-image"></img>
+          </div>
+        </a>
       </div>
     </div>
   );

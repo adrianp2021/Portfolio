@@ -18,12 +18,13 @@ const Contact = () => {
   }
 
   return (
-    <section id="contact" className="page-section">
-      <div className="get-in-touch">
-        <h1 className="owner" id="section-title">
+    <section className="page-section" id="contact-container">
+      <div className="get-in-touch section-box">
+        <h1 id="section-title" className="owner">
           &lt; get in touch /&gt;
         </h1>
 
+        <div id="contact-box">
           <form
             action="https://formspree.io/f/xdoypozv"
             method="POST"
@@ -89,6 +90,7 @@ const Contact = () => {
               send
             </button>
           </form>
+        </div>
       </div>
     </section>
   );

@@ -14,7 +14,7 @@ const Connect = () => {
         <div className="connect-divs">
           <div className="left-div">
             <h2>or feel free to connect</h2>
-            <p className="connect-copyrights">© 2021 Adrian Pantea</p>
+            {/* <p className="connect-copyrights">© 2021 Adrian Pantea</p> */}
           </div>
 
           <div className="right-div">

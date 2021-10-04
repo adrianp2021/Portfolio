@@ -4,44 +4,27 @@ import drinkard from "../project/drinkard.jpeg";
 const ProjectCard2 = () => {
   return (
     <div className="project-card">
-      <div className="project-image">
+      <div className="project-info">
         <a
           href="https://drinkard.netlify.app/"
-          target="_blank"
           rel="noreferrer"
+          target="_blank"
         >
-          <img className="project-image" src={drinkard} alt=""></img>
+          <h2>Drinkard</h2>
         </a>
-      </div>
-      <div className="project-info">
-        <h2>Project 2</h2>
-        <div>
-          <a
-            href="https://drinkard.netlify.app/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <h2>Drinkard</h2>
-          </a>
-        </div>
-      </div>
-      <div className="project-description">
+
         <p>
           DRINKARD is an application which hosts a variety of 25 cocktails. The
           aim was to get information from a Cocktail API and then building our
-          application. Once the page loads, a "Welcome to DRINKARD 🍸" message
-          displays, with the glass being clickable. If the user clicks on the
-          glass, it will direct him/her to the cocktails page.
+          application. It was built with <span id="span">HTML/CSS</span>,{" "}
+          <span id="span">React.js</span>,<span id="span">Axios</span>,{" "}
+          <span id="span">Bulma</span> and an external{" "}
+          <span id="span"> API</span>. Once the page loads, a "Welcome to
+          DRINKARD 🍸" message displays, with the glass being clickable. If the
+          user clicks on the glass, it will direct him/her to the cocktails
+          page.
         </p>
-      </div>
-      <div className="libraries">
-        <p className="libraries-technologies ">HTML/CSS</p>
-        <p className="libraries-technologies ">React.js</p>
-        <p className="libraries-technologies ">Axios</p>
-        <p className="libraries-technologies ">Bulma</p>
-        <p className="libraries-technologies ">API</p>
-      </div>
-      <div className="app-links">
+
         <ul>
           <li>
             <a
@@ -62,6 +45,18 @@ const ProjectCard2 = () => {
             </a>
           </li>
         </ul>
+      </div>
+
+      <div>
+        <a
+          href="https://drinkard.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className="img-hover-zoom img-hover-zoom--colorize">
+            <img className="project-image" src={drinkard} alt=""></img>
+          </div>
+        </a>
       </div>
     </div>
   );

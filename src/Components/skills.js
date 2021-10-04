@@ -53,21 +53,23 @@ const skills = () => {
   ];
 
   return (
-    <div className="skills">
-      <h1>Programming skills:</h1>
-      <div className="web-development">
-      {logoImages.map((image, i) => {
-        return (
-          <>
-            <div className="skill-name" key={i}>
-              <img src={image.link} className="skill" alt="img" />
-              <p>{image.name}</p>
-            </div>
-          </>
-        );
-      })}
+    <section className="section-box">
+      <div className="skills">
+        <p id="span">Programming skills:</p>
+        <div className="web-development">
+          {logoImages.map((image, i) => {
+            return (
+              <>
+                <div className="skill-name" key={i}>
+                  <img src={image.link} className="skill" alt="img" />
+                  <p>{image.name}</p>
+                </div>
+              </>
+            );
+          })}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
