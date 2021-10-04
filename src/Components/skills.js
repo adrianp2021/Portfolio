@@ -1,6 +1,6 @@
 import React from "react";
 
-const Skills = () => {
+const skills = () => {
   const logoImages = [
     {
       name: "CSS 3",
@@ -73,4 +73,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default skills;
