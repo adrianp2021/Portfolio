@@ -1,6 +1,6 @@
 import React from "react";
-import Skills from "./skills.js"
-import Management from "./Management.js";
+import Skills from "./skills"
+import Management from "./Management";
 
 const About = () => {
   return (
