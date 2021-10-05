@@ -62,14 +62,14 @@ const Navbar = ({}) => {
         animate="visible"
         variants={{
           hidden: {
-            scale: 0.8,
+            scale: 0.5,
             opacity: 0,
           },
           visible: {
             scale: 1,
             opacity: 1,
             transition: {
-              duration: 0.9,
+              duration: 2.5,
             },
           },
         }}
