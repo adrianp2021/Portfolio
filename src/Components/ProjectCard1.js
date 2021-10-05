@@ -45,7 +45,7 @@ const ProjectCard1 = () => {
         </ul>
       </div>
 
-      <div>
+      <div >
         <a
           href="https://adrianp2021.github.io/SEI-Project-1/"
           target="_blank"

@@ -54,7 +54,7 @@ const Skills = () => {
 
   return (
     <section className="section-box">
-      <div className="S">
+      <div className="skills">
         <p id="span">Programming skills:</p>
         <div className="web-development">
           {logoImages.map((image, i) => {

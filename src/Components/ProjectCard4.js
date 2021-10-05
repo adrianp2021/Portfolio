@@ -3,7 +3,10 @@ import crumble from "../project/crumble.jpeg";
 
 const ProjectCard4 = () => {
   return (
-    <div className="project-card">
+    <div className="project-card"
+  
+    
+    >
       <div className="project-info">
         <a
           href="https://github.com/adrianp2021/SEI-Project-4"
@@ -45,7 +48,7 @@ const ProjectCard4 = () => {
           </li>
         </ul>
       </div>
-      <div>
+      <div >
         <a
           href="https://github.com/adrianp2021/SEI-Project-4"
           target="_blank"

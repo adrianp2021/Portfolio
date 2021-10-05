@@ -1,8 +1,7 @@
 import React from "react";
 
 import About from "./About.js";
-import Skills from "./Skills.js";
-import Management from "./Management.js";
+
 import Experience from "./Experience.js";
 import ProjectCard1 from "./ProjectCard1.js";
 import ProjectCard2 from "./ProjectCard2.js";
@@ -12,29 +11,71 @@ import Contact from "./Contact.js";
 
 import mac from "../images/mac.png";
 
+import { motion } from "framer-motion";
+
 const Home = () => {
   return (
     <>
       <section className="page-section" id="landing-container">
         <div className="section-box landing-box">
-          <div className="landing-left-div">
+          <motion.div
+            className="landing-left-div"
+            animate="visible"
+            initial="hidden"
+            variants={{
+              hidden: {
+                scale: 0.5,
+                opacity: 0,
+              },
+              visible: {
+                scale: 1,
+                opacity: 1,
+                transition: {
+                  duration: 1,
+                  type: "spring",
+                  stiffness: 60,
+                },
+              },
+            }}
+          >
             <h3>
               <span className="landing-span"></span>Hello there
             </h3>
             <h2 className="name">&lt; I am Adrian Pantea /&gt;</h2>
             <p>
-              A<span id="span"> Junior Full-Stack Software Enginner</span>,
+              A<span id="span"> Junior Full-Stack Software Engineer</span>,
               focused on simplicity and creating amazing web applications.
             </p>
-          </div>
-          <img src={mac} alt="" className="img"></img>
+          </motion.div>
+          <motion.img
+            animate="visible"
+            initial="hidden"
+            variants={{
+              hidden: {
+                scale: 0.5,
+                opacity: 0,
+              },
+              visible: {
+                rotate: 360,
+                scale: 1,
+                opacity: 1,
+                transition: {
+                  duration: 5,
+                  type: "tween",
+                  stiffness: 60,
+                  damping: 15,
+                },
+              },
+            }}
+            src={mac}
+            alt=""
+            className="img"
+          ></motion.img>
         </div>
       </section>
 
-      <section className="page-section" id="about-container">
+      <section className="page-section">
         <About />
-        <Skills />
-        <Management />
       </section>
 
       <Experience />

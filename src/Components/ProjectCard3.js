@@ -15,7 +15,7 @@ const ProjectCard3 = () => {
 
         <p>
           Full-Stack MERN <span id="span">MongoDb</span>,
-          <span id="span">Express</span>, <span id="span">React</span> and{" "}
+          <span id="span"> Express</span>, <span id="span">React</span> and{" "}
           <span id="span">Node.js </span> app based on TrustPilot, with Greek
           mythology theme. Gods or standard users can register/login, and leave
           reviews based on their individual experience. Register/login (as well
@@ -45,7 +45,7 @@ const ProjectCard3 = () => {
         </ul>
       </div>
 
-      <div>
+      <div >
         <a
           href="https://whispering-coast-70189.herokuapp.com/"
           target="_blank"

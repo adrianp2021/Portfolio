@@ -1,4 +1,6 @@
 import React from "react";
+import Management from "./Management.js";
+import Skills from "./Skills.js";
 
 
 
@@ -9,7 +11,7 @@ const About = () => {
         <h2 id="section-title" className="owner">
           &lt; about me /&gt;
         </h2>
-        <div>
+        <div className="about-myself">
           <h3>I love simple code.</h3>
           <p>
             I'm Adrian, a{" "}
@@ -55,8 +57,12 @@ const About = () => {
               <p>Tailwind CSS</p>
             </div>
           </div>
+          <Skills />
+        <Management />
         </div>
+      
       </div>
+
     </section>
   );
 };

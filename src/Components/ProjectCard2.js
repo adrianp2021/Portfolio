@@ -3,7 +3,7 @@ import drinkard from "../project/drinkard.jpeg";
 
 const ProjectCard2 = () => {
   return (
-    <div className="project-card">
+    <div className="project-card" id="row">
       <div className="project-info">
         <a
           href="https://drinkard.netlify.app/"
