@@ -4,7 +4,6 @@ import About from "./About.js";
 
 import Skills from "./Skills"
 import Management from "./Management";
-
 import Experience from "./Experience.js";
 import ProjectCard1 from "./ProjectCard1.js";
 import ProjectCard2 from "./ProjectCard2.js";
