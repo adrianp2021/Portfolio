@@ -27,7 +27,7 @@ const Home = () => {
               focused on simplicity and creating amazing web applications.
             </p>
           </div>
-          <img src={mac} alt="" className="img" rel="preload"></img>
+          <img src={mac} alt="" className="img"></img>
         </div>
       </section>
 

@@ -49,7 +49,7 @@ const Management = () => {
             return (
               <>
                 <div key={i} />
-                <div className="skill-name" rel="preload">
+                <div className="skill-name">
                   <img src={image.link} className="skill" alt="img" />
                   <p>{image.name}</p>
                 </div>
