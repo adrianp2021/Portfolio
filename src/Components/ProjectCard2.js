@@ -54,7 +54,7 @@ const ProjectCard2 = () => {
           rel="noreferrer"
         >
           <div className="img-hover-zoom img-hover-zoom--colorize">
-            <img className="project-image" src={drinkard} alt=""></img>
+            <img src={drinkard} alt="" className="project-image"></img>
           </div>
         </a>
       </div>

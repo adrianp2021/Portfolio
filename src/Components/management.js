@@ -36,7 +36,7 @@ const Management = () => {
     },
     {
       name: "TablePlus",
-      link: "link: 'https://tableplus.com/resources/favicons/apple-icon.png'",
+      link: "https://tableplus.com/resources/favicons/apple-icon.png",
     },
   ];
 
