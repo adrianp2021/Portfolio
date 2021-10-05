@@ -1,16 +1,34 @@
 /* eslint-disable jsx-a11y/no-redundant-roles */
 import React from "react";
+import { motion } from "framer-motion";
 // import { Link } from 'react-router-dom'
 import github from "../images/github.png";
 import linkedin from "../images/linkedin.png";
 import mail from "../images/email.png";
 
-const Navbar = () => {
+const Navbar = ({}) => {
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <h1 className="owner"> &lt; AP /&gt;</h1>
 
-      <div className="navbar-items">
+      <motion.div
+        className="navbar-items"
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: {
+            scale: 0.8,
+            opacity: 0,
+          },
+          visible: {
+            scale: 1,
+            opacity: 1,
+            transition: {
+              duration: 0.9,
+            },
+          },
+        }}
+      >
         <a className="render nav-item" href="#about-container" title="about">
           about
         </a>
@@ -36,8 +54,26 @@ const Navbar = () => {
         >
           contact
         </a>
-      </div>
-      <div className="navbar-social">
+      </motion.div>
+
+      <motion.div
+        className="navbar-social"
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: {
+            scale: 0.8,
+            opacity: 0,
+          },
+          visible: {
+            scale: 1,
+            opacity: 1,
+            transition: {
+              duration: 0.9,
+            },
+          },
+        }}
+      >
         <a
           href="https://github.com/adrianp2021"
           target="_blank"
@@ -55,7 +91,7 @@ const Navbar = () => {
         <a href="mailto:adrianpantea10@gmail.com" rel="noreferrer">
           <img src={mail} alt="" id="social-icon"></img>
         </a>
-      </div>
+      </motion.div>
     </nav>
   );
 };

@@ -4,7 +4,9 @@ import React from "react";
 const About = () => {
   return (
     <section className="page-section" id="about-container">
-      <div className="section-box" id="about-box">
+      <div
+  
+      >
         <h2 id="section-title" className="owner">
           &lt; about me /&gt;
         </h2>
