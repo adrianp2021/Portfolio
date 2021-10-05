@@ -2,8 +2,8 @@ import React from "react";
 
 import About from "./About.js";
 
-import Skills from "./Skills"
-import Management from "./Management";
+import Skills from "./Skills.js"
+import Management from "./Management.js";
 import Experience from "./Experience.js";
 import ProjectCard1 from "./ProjectCard1.js";
 import ProjectCard2 from "./ProjectCard2.js";
