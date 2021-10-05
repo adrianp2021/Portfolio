@@ -1,7 +1,7 @@
 import React from "react";
 
 import About from "./About.js";
-
+import Skills from "./Skills.js";
 import Management from "./Management.js";
 import Experience from "./Experience.js";
 import ProjectCard1 from "./ProjectCard1.js";
@@ -33,6 +33,7 @@ const Home = () => {
 
       <section className="page-section" id="about-container">
         <About />
+        <Skills />
         <Management />
       </section>
 
