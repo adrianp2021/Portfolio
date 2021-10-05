@@ -1,13 +1,16 @@
 import React from "react";
 
 import About from "./About.js";
+
+import Skills from "./Skills"
+import Management from "./Management";
+
 import Experience from "./Experience.js";
 import ProjectCard1 from "./ProjectCard1.js";
 import ProjectCard2 from "./ProjectCard2.js";
 import ProjectCard3 from "./ProjectCard3.js";
 import ProjectCard4 from "./ProjectCard4.js";
 import Contact from "./Contact.js";
-// import Connect from "./Connect.js";
 
 import mac from "../images/mac.png";
 
@@ -26,17 +29,18 @@ const Home = () => {
               focused on simplicity and creating amazing web applications.
             </p>
           </div>
-
           <img src={mac} alt="" className="img"></img>
         </div>
       </section>
 
-      <section className="page-section" id="about">
+      <section className="page-section" id="about-container">
         <About />
+        <Skills />
+        <Management />
       </section>
 
       <Experience />
-      
+
       <section className="page-section" id="project-container">
         <div className="section-box" id="project-box">
           <h1 id="section-title" className="owner">

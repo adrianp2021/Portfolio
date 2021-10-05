@@ -1,6 +1,5 @@
 import React from "react";
-import Skills from "./skills"
-import Management from "./Management";
+
 
 const About = () => {
   return (
@@ -56,8 +55,6 @@ const About = () => {
             </div>
           </div>
         </div>
-        <Skills />
-        <Management />
       </div>
     </section>
   );
