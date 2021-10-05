@@ -24,7 +24,7 @@ const Management = () => {
     },
     {
       name: "Insomnia",
-      link: "https://s3.amazonaws.com/s3.roaringapps.com/assets/icons/1561251841927-Insomnia.png"
+      link: "https://ucarecdn.com/4595f3fd-6943-4d2f-a3fb-140f9ace4a56/-/format/auto/-/progressive/yes/-/preview/480x480/"
     },
     {
       name: "VS Code",
