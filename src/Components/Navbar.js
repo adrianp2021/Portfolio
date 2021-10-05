@@ -6,7 +6,7 @@ import github from "../images/github.png";
 import linkedin from "../images/linkedin.png";
 import mail from "../images/email.png";
 
-const Navbar = ({}) => {
+const Navbar = () => {
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <h1 className="owner"> &lt; AP /&gt;</h1>
