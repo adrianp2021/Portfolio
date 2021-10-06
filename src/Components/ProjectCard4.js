@@ -18,7 +18,7 @@ const ProjectCard4 = () => {
 
         <p>
           A Full-Stack dating app, built with <span id="span">React</span>,{" "}
-          <span id="span">Django</span>, <span id="span">Python </span>,{" "}
+          <span id="span">Django</span>, <span id="span">Python</span>,{" "}
           <span id="span"> PostgreSQL</span> and <span id="span">Bulma </span>
           which allows users to register and/or login, and find others who share
           the same interests. I built the Front-End with React, JavaScript, and

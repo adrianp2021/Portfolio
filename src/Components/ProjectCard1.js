@@ -10,7 +10,7 @@ const ProjectCard1 = () => {
           rel="noreferrer"
           target="_blank"
         >
-          <h1>Snake</h1>
+          <h2>Snake</h2>
         </a>
 
         <p>

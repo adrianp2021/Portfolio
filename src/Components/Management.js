@@ -20,7 +20,7 @@ const Management = () => {
     },
     {
       name: "Slack",
-      link: "https://cdn.freebiesupply.com/logos/large/2x/slack-logo-icon.png"
+      link: "https://dashboard.snapcraft.io/site_media/appmedia/2019/01/Snapcraft_256x256.png"
     },
     {
       name: "Insomnia",
@@ -28,7 +28,7 @@ const Management = () => {
     },
     {
       name: "VS Code",
-      link: "https://cdn.freebiesupply.com/logos/thumbs/2x/visual-studio-code-logo.png"
+      link: "https://insmac.org/uploads/posts/2021-07/1625841610_code.png"
     },
     {
       name: "Trello",
@@ -43,7 +43,7 @@ const Management = () => {
   return (
     <section className="section-box">
       <div className="skills">
-        <p id="span">Management tools:</p>
+        <p id="span" className="underline">Management tools:</p>
         <div className="web-development">
           {logoImages.map((image, i) => {
             return (

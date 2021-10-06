@@ -14,9 +14,9 @@ const ProjectCard3 = () => {
         </a>
 
         <p>
-          Full-Stack MERN <span id="span">MongoDb</span>,
+          Full-Stack application, built with <span id="span">MongoDb</span>,
           <span id="span"> Express</span>, <span id="span">React</span> and{" "}
-          <span id="span">Node.js </span> app based on TrustPilot, with Greek
+          <span id="span">Node.js</span>, based on TrustPilot, with Greek
           mythology theme. Gods or standard users can register/login, and leave
           reviews based on their individual experience. Register/login (as well
           as authenticating the users), landing and about pages were the main

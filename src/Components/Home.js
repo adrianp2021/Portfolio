@@ -1,7 +1,6 @@
 import React from "react";
 
 import About from "./About.js";
-
 import Experience from "./Experience.js";
 import ProjectCard1 from "./ProjectCard1.js";
 import ProjectCard2 from "./ProjectCard2.js";
@@ -56,11 +55,10 @@ const Home = () => {
                 opacity: 0,
               },
               visible: {
-                rotate: 360,
                 scale: 1,
                 opacity: 1,
                 transition: {
-                  duration: 5,
+                  duration: 2,
                   type: "tween",
                   stiffness: 60,
                   damping: 15,

@@ -30,7 +30,7 @@ const About = () => {
           </p>
         </div>
         <div className="learn">
-          <p id="span">Currently learning:</p>
+          <p id="span" className="underline">Currently learning:</p>
           <div className="skills-set">
             <div className="skill-box">
               <img

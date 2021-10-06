@@ -3,7 +3,7 @@ import drinkard from "../project/drinkard.jpeg";
 
 const ProjectCard2 = () => {
   return (
-    <div className="project-card" id="row">
+    <div className="project-card">
       <div className="project-info">
         <a
           href="https://drinkard.netlify.app/"
@@ -17,7 +17,7 @@ const ProjectCard2 = () => {
           DRINKARD is an application which hosts a variety of 25 cocktails. The
           aim was to get information from a Cocktail API and then building our
           application. It was built with <span id="span">HTML/CSS</span>,{" "}
-          <span id="span">React.js</span>,<span id="span">Axios</span>,{" "}
+          <span id="span">React.js</span>,<span id="span"> Axios</span>,{" "}
           <span id="span">Bulma</span> and an external{" "}
           <span id="span"> API</span>. Once the page loads, a "Welcome to
           DRINKARD 🍸" message displays, with the glass being clickable. If the

@@ -11,7 +11,6 @@ html {
 }
 .owner {
   font-family: "Nothing You Could Do", cursive;
-  font-size: 20px;
   color: rgb(0, 0, 0);
 }
 html {
@@ -20,35 +19,40 @@ html {
 .section-box {
   width: 70%;
 }
-
+.any {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
 .navbar {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  height: 60px;
+  height: 70px;
   background: rgba(229, 235, 238, 0.849);
 }
+#number{
+  color: rgb(72, 74, 110);
+}
+
 .navbar-items {
-  width: 700px;
+  width: 550px;
   height: 100%;
   display: flex;
   justify-content: space-around;
-  align-items: center;
 }
 .nav-item {
-  margin-right: 50px;
-  font-size: 14px;
   text-decoration: none;
 }
 .nav-item a {
-  color: green;
+  color: rgb(191, 201, 191);
 }
 
 .navbar-social {
-  width: 300px;
+  width: 200px;
   height: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 #social-icon {
@@ -79,7 +83,7 @@ html {
   display: flex;
   align-items: center;
   font-weight: lighter;
-  color: green;
+  color: #9b9db6;
 }
 .landing-left-div p {
   font-size: 16px;
@@ -103,7 +107,7 @@ html {
   font-family: "Nothing You Could Do", cursive;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   body {
     width: 100%;
     height: 100%;
@@ -113,9 +117,6 @@ html {
   }
   .owner {
     width: 100px;
-  }
-  #section-title {
-    font-size: 2px;
   }
   #centre {
     font-size: 22px;
@@ -165,9 +166,15 @@ html {
 }
 
 #section-title {
-  font-size: 35px;
+  // width: 25%;
+  font-size: 25px;
+  border-bottom: 1px solid black;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-
+.underline {
+  text-decoration: underline;
+}
 .skill-box {
   display: flex;
   flex-direction: column;
@@ -189,13 +196,13 @@ html {
   align-items: center;
   font-size: 13px;
   color: black;
-  margin-right: 5px;
+  margin-right: 10px;
   border: none;
 }
 .skill {
   width: 50px;
   height: 40px;
-  padding: 15px;
+  padding: 5px;
 }
 
 #about-container {
@@ -213,8 +220,11 @@ html {
   justify-content: space-around;
   align-items: center;
 }
+.learn {
+  margin-top: 2%;
+}
 
-@media only screen and (max-device-width: 480px) and (max-device-width: 800px) {
+@media only screen and (max-device-width: 1000px) {
   #about {
     display: block;
   }
@@ -223,19 +233,30 @@ html {
     width: 100%;
     height: 100%;
   }
+  .skill-box p {
+    text-align: center;
+  }
   .web-development {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     font-family: "Montserrat", sans-serif;
   }
   .skills-set {
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: d;
+  }
+  .skill {
+    width: 70%;
+    height: 30px;
   }
   .skill-box,
   .skill-name {
-    width: 65px;
+    width: 55px;
     margin: 5px;
+  }
+  .skill-name p,
+  .skill-box p {
+    font-size: 70%;
   }
   .introduction {
     width: 100%;
@@ -245,7 +266,7 @@ html {
     align-items: center;
   }
   #section-title {
-    font-size: 28px;
+    font-size: 25px;
   }
   #about-box {
     display: flex;
@@ -262,7 +283,7 @@ html {
 }
 .work-experience {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   margin: 0 auto;
 }
@@ -271,16 +292,14 @@ html {
   height: 100px;
 }
 .work-box {
-  width: 45%;
+  width: 400px;
   height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 12px;
-  background: rgba(241, 241, 240, 0.541);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 50px;
-  padding: 15px;
 }
 .work-box p {
   padding: 15px;
@@ -289,25 +308,24 @@ html {
   font-size: 18px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1160px) {
   .work-experience {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
   }
   .work-box {
     width: 90%;
-    background: rgb(213, 223, 211);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
     font-family: "Montserrat", sans-serif;
     margin-bottom: 10%;
-    border-radius: 12px;
+    padding: -15px;
   }
+
   .work-box h2 {
     font-size: 15px;
   }
@@ -335,21 +353,19 @@ html {
 }
 .project-card {
   border-radius: 12px;
-  width: 100%;
-  height: 420px;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 50px;
   display: flex;
-  margin-bottom: 10%;
-  background: rgba(241, 241, 240, 0.541);
+  margin-bottom: 30px;
+  background: rgba(248, 248, 248, 0.5);
 }
 .project-image {
-  width:100%;
+  width: 550px;
   height: 100%;
 }
 .project-info {
   font-size: 14px;
-  width:60%;
+  width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -363,12 +379,17 @@ html {
 .project-info a {
   font-family: "Playfair Display", serif;
   font-weight: 900;
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-decoration: none;
   transform: scaleX(1.2);
-  color: rgb(78, 79, 80);
+  color: rgb(211, 27, 14);
 }
 
+.project-info p {
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 5%;
+}
 .img-hover-zoom {
   height: 100%;
   overflow: hidden;
@@ -376,7 +397,7 @@ html {
 }
 
 .img-hover-zoom--colorize img {
-  // transform-origin: 45% 25%;
+  transform-origin: 45% 25%;
   transition: transform 0.9s, filter 0.8s ease-in;
   filter: brightness(100%);
 }
@@ -417,7 +438,7 @@ ul li a:hover {
   color: #992525;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1000px) {
   #project-container {
     display: flex;
     flex-direction: column;
@@ -447,10 +468,13 @@ ul li a:hover {
   .img-hover-zoom {
     border-radius: 0 0 12px 12px;
   }
-  .project-info h2, p {
+  .project-info h2,
+  p {
     font-size: 100%;
   }
-
+  .project-name {
+    font-size: 50%;
+  }
 }
 // ! PROJECT SECTION END
 
@@ -460,13 +484,12 @@ ul li a:hover {
   justify-content: center;
   align-items: center;
   background: rgba(229, 235, 238, 0.849);
-  // background-image: url("https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWluaW1hbCUyMHdoaXRlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60");
   background-size: cover;
   background-position: center;
 }
 
 .contact-form {
-  width: 80%;
+  width: 100%;
   padding: 0 10px;
   margin-bottom: 80px;
 }
@@ -551,19 +574,8 @@ button:hover {
   .contact-form-text {
     width: 100%;
   }
-  .button-contact {
-    text-align: center;
-  }
-  .get-in-touch {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
 }
-// ! CONTACT SECTION END
 
-// ! CONNECT SECTION START
 .connect-section {
   width: 100%;
   height: 80vh;
@@ -623,7 +635,7 @@ button:hover {
   color: rgb(0, 0, 0);
   transition: all 0.3s;
   position: relative;
-  font-size: 16px;
+  font-size: 18px;
 }
 .render span {
   transition: all 0.5s;
@@ -639,10 +651,12 @@ button:hover {
   opacity: 0;
   transition: all 0.3s;
   border-bottom-width: 1px;
+  border-top-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: rgba(0, 0, 0, 0.5);
+  border-top-style: solid;
+  border-bottom-color: green;
+  border-top-color: green;
   transform: scale(2, 1);
-  margin-bottom: -5px;
 }
 .render:hover span {
   letter-spacing: 2px;
@@ -688,5 +702,3 @@ button:hover {
     font-size: 14px;
   }
 }
-
-// ! CONNECT SECTION END
