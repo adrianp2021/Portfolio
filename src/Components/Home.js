@@ -8,7 +8,7 @@ import ProjectCard3 from "./ProjectCard3.js";
 import ProjectCard4 from "./ProjectCard4.js";
 import Contact from "./Contact.js";
 
-import mac from "../images/mac.png";
+import mac from "../images/laptop.png";
 
 import { motion } from "framer-motion";
 
@@ -31,8 +31,8 @@ const Home = () => {
                 opacity: 1,
                 transition: {
                   duration: 1,
-                  type: "spring",
-                  stiffness: 60,
+                  // type: "spring",
+                  // stiffness: 60,
                 },
               },
             }}
@@ -58,10 +58,10 @@ const Home = () => {
                 scale: 1,
                 opacity: 1,
                 transition: {
-                  duration: 2,
+                  duration: 1.4,
                   type: "tween",
-                  stiffness: 60,
-                  damping: 15,
+                  // stiffness: 60,
+                  // damping: 15,
                 },
               },
             }}

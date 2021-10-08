@@ -19,53 +19,90 @@ html {
 .section-box {
   width: 70%;
 }
-.any {
-  width: 70%;
-  display: flex;
-  justify-content: space-between;
-}
-.navbar {
+
+.navbar{
+  height: 80px;
+  // position: fixed;
+  z-index: 999;
+  opacity: .9;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70px;
-  background: rgba(229, 235, 238, 0.849);
+  // align-items: center;
+  background: rgb(39, 36, 36);
 }
-#number{
-  color: rgb(72, 74, 110);
+.navbar nav ul li{
+  display: inline-block;
+  margin: 1.2vw
 }
-
-.navbar-items {
-  width: 550px;
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-.nav-item {
+.navbar nav ul li a{
   text-decoration: none;
+  color: rgb(255, 255, 255);
 }
-.nav-item a {
-  color: rgb(191, 201, 191);
+.navbar a:hover{
+  border-bottom: 1px solid green;
 }
 
-.navbar-social {
-  width: 200px;
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.hamburger{
+  width:40px;
+  height: 30px;
+  color:rgb(255, 255, 255);
 }
-#social-icon {
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
+
+.navbar .MobileNavigation{
+  display: none;
+}
+@media (max-width: 990px) {
+  .navbar .Navigation{
+    display: none;
+  }
+
+  .navbar .MobileNavigation{
+    display: flex;
+    align-items: center;
+    background: red;
+    margin:15px;
+    height: 40px;
+  }
+  .navbar .MobileNavigation .hamburger{
+    position: fixed;
+    right: 5%;
+    cursor: pointer;
+
+  }
+  .navbar nav ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:50px;
+    right: 0;
+    width: 100%;
+    background: rgb(39, 36, 36);
+    // border-top: 2px solid #8c1d18;
+  }
+  .navbar nav ul li{
+    padding-left: 15%;
+  }
+  .navbar{
+    opacity: 1;
+  }
+  .navbar a:hover{
+    border-bottom: none;
+    color: #8c1d18;
+  }
+}
+
+.navigation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #landing-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(229, 235, 238, 0.849);
+  // background: rgba(229, 235, 238, 0.849);
 }
 .landing-box {
   display: flex;
@@ -112,9 +149,9 @@ html {
     width: 100%;
     height: 100%;
   }
-  .navbar-items {
-    display: none;
-  }
+  // .navbar-items {
+  //   display: none;
+  // }
   .owner {
     width: 100px;
   }
@@ -166,11 +203,15 @@ html {
 }
 
 #section-title {
-  // width: 25%;
+  width: 55%;
   font-size: 25px;
+  border-top: 1px solid black;
   border-bottom: 1px solid black;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  background: black;
+  color: white;
+  // padding-top: 5px;
+  // padding-bottom: 5px;
+  text-align: center;
 }
 .underline {
   text-decoration: underline;
@@ -211,7 +252,7 @@ html {
   justify-content: center;
   align-items: center;
   font-family: "Montserrat", sans-serif;
-  background: rgba(229, 235, 238, 0.849);
+  // background: rgba(229, 235, 238, 0.849);
 }
 
 .introduction {
@@ -279,7 +320,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(229, 235, 238, 0.849);
+  // background: rgba(229, 235, 238, 0.849);
 }
 .work-experience {
   display: flex;
@@ -339,7 +380,7 @@ html {
 
 // ! PROJECT SECTION START
 #project-container {
-  background: rgba(229, 235, 238, 0.849);
+  // background: rgba(229, 235, 238, 0.849);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -353,12 +394,12 @@ html {
   align-items: center;
 }
 .project-card {
-  border-radius: 12px;
+  // border-radius: 12px;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 50px;
   display: flex;
   margin-bottom: 30px;
-  background: rgba(248, 248, 248, 0.5);
+  // background: rgba(248, 248, 248, 0.5);
 }
 .project-image {
   width: 550px;
@@ -394,7 +435,7 @@ html {
 .img-hover-zoom {
   height: 100%;
   overflow: hidden;
-  border-radius: 0 12px 12px 0;
+  // border-radius: 0 12px 12px 0;
 }
 
 .img-hover-zoom--colorize img {
@@ -508,7 +549,7 @@ ul li a:hover {
   padding: 15px 30px;
   outline: none;
   color: rgb(27, 25, 25);
-  border-radius: 10px;
+  // border-radius: 10px;
 }
 
 .contact-form-text {
@@ -521,7 +562,7 @@ ul li a:hover {
   padding: 15px 30px;
   color: rgb(0, 0, 0);
   font-family: "Montserrat", sans-serif;
-  border-radius: 10px;
+  // border-radius: 10px;
 }
 
 .contact-message {
@@ -550,7 +591,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
+  // border-radius: 10px;
 }
 button:hover {
   color: #fff;

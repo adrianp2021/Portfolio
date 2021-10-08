@@ -8,7 +8,7 @@ const Experience = () => {
     <section className="page-section" id="experience-container">
       <div className="section-box" id="experience-box">
         <h2 id="section-title" className="owner">
-          &lt; experience /&gt;
+          &lt; 03. experience /&gt;
         </h2>
 
         <div className="work-experience" id="experience-section">
