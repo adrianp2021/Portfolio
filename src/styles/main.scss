@@ -217,7 +217,7 @@ html {
 }
 
 #section-title {
-  width: 55%;
+  width: 75%;
   font-size: 25px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
@@ -538,7 +538,6 @@ ul li a:hover {
 
 .contact-form {
   width: 100%;
-  // padding: 0 10px;
   margin-bottom: 80px;
 }
 #contact-box {
@@ -555,7 +554,6 @@ ul li a:hover {
   padding: 15px 30px;
   outline: none;
   color: rgb(27, 25, 25);
-  // border-radius: 10px;
 }
 
 .contact-form-text {
@@ -563,12 +561,11 @@ ul li a:hover {
   width: 100%;
   box-sizing: border-box;
   margin: 16px 0;
-  border: 1.5px solid #8a8a8a;
+  border: 1px solid #8a8a8a;
   background: rgba(248, 248, 248, 0.5);
   padding: 15px 30px;
   color: rgb(0, 0, 0);
   font-family: "Montserrat", sans-serif;
-  // border-radius: 10px;
 }
 
 .contact-message {
@@ -597,7 +594,6 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  // border-radius: 10px;
 }
 button:hover {
   color: #fff;
@@ -616,7 +612,6 @@ button:hover {
     display: block;
   }
   .contact-form {
-    // width: 100%;
     display: block;
   }
   .contact-form-text {
