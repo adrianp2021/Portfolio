@@ -31,7 +31,7 @@ const Experience = () => {
             <p>May 2021 - July 2021</p>
             <p>
               A 12-week full-time bootcamp designed for a career transformation
-              in tech where I learnt the fundamental skills to build Full- Stack
+              in tech where I learnt the fundamental skills to build Full-Stack
               web applications. Throughout the bootcamp, I also learned to work
               through the agile method, work in a team, have daily stand-ups,
               refine and plan our projects.

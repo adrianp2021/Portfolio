@@ -8,7 +8,7 @@ import ProjectCard3 from "./ProjectCard3.js";
 import ProjectCard4 from "./ProjectCard4.js";
 import Contact from "./Contact.js";
 
-import mac from "../images/laptop.png";
+import mac from "../images/coding.gif";
 
 import { motion } from "framer-motion";
 
