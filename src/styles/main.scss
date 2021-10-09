@@ -21,26 +21,28 @@ html {
 }
 
 .navbar{
-  height: 80px;
-  // position: fixed;
+  height: 70px;
+  width: 100%;
+  position: fixed;
   z-index: 999;
   opacity: .9;
   display: flex;
   justify-content: center;
   align-items: center;
-  // align-items: center;
-  background: rgb(39, 36, 36);
+  background: rgb(0, 0, 0);
+}
+.navbar nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .navbar nav ul li{
   display: inline-block;
-  margin: 1.2vw
+  // margin: 1.2vw
 }
 .navbar nav ul li a{
   text-decoration: none;
   color: rgb(255, 255, 255);
-}
-.navbar a:hover{
-  border-bottom: 1px solid green;
 }
 
 .hamburger{
@@ -60,34 +62,41 @@ html {
   .navbar .MobileNavigation{
     display: flex;
     align-items: center;
-    background: red;
+    background: rgb(39, 36, 36);
     margin:15px;
     height: 40px;
+    // opacity: .9;
   }
   .navbar .MobileNavigation .hamburger{
     position: fixed;
     right: 5%;
     cursor: pointer;
-
   }
   .navbar nav ul{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top:60px;
+    top:100%;
     right: 0;
     width: 100%;
+    height: 400px;
     background: rgb(39, 36, 36);
-    // border-top: 2px solid #8c1d18;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .navbar nav ul li{
-    padding-left: 15%;
+    font-size: 40px;
+    // margin-top: 10px;
+    // margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
   }
   .navbar{
     opacity: 1;
   }
   .navbar a:hover{
-    border-bottom: none;
+    // border-bottom: none;
     color: #8c1d18;
   }
 }
@@ -320,7 +329,6 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  // background: rgba(229, 235, 238, 0.849);
 }
 .work-experience {
   display: flex;
@@ -339,7 +347,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 12px;
+  // border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 50px;
   text-align: center;
 }
@@ -350,22 +358,18 @@ html {
   font-size: 18px;
 }
 
-@media only screen and (max-width: 1160px) {
+@media only screen and (max-width: 1000px) {
   .work-experience {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
   }
   .work-box {
-    width: 90%;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
+    width: 100%;
     font-family: "Montserrat", sans-serif;
     margin-bottom: 10%;
-    padding: -15px;
   }
 
   .work-box h2 {
@@ -373,7 +377,7 @@ html {
   }
   .work-box p {
     text-align: center;
-    font-size: 90%;
+    font-size: 85%;
   }
 }
 // ! EXPERIENCE SECTION END
@@ -501,14 +505,11 @@ ul li a:hover {
   }
   .project-info {
     height: 100%;
-    width: 90%;
+    width: 100%;
   }
   .project-image {
     width: 100%;
     height: 100%;
-  }
-  .img-hover-zoom {
-    border-radius: 0 0 12px 12px;
   }
   .project-info h2,
   p {
@@ -532,7 +533,7 @@ ul li a:hover {
 
 .contact-form {
   width: 100%;
-  padding: 0 10px;
+  // padding: 0 10px;
   margin-bottom: 80px;
 }
 #contact-box {
@@ -604,13 +605,13 @@ button:hover {
   font-size: 3rem;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   #contact {
     width: 100%;
     display: block;
   }
   .contact-form {
-    width: 100%;
+    // width: 100%;
     display: block;
   }
   .contact-form-text {
@@ -673,55 +674,56 @@ button:hover {
   margin-left: 2px;
 }
 
-.render {
-  color: rgb(0, 0, 0);
-  transition: all 0.3s;
-  position: relative;
-  font-size: 18px;
-}
-.render span {
-  transition: all 0.5s;
-}
-.render::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  opacity: 0;
-  transition: all 0.3s;
-  border-bottom-width: 1px;
-  border-top-width: 1px;
-  border-bottom-style: solid;
-  border-top-style: solid;
-  border-bottom-color: green;
-  border-top-color: green;
-  transform: scale(2, 1);
-}
-.render:hover span {
-  letter-spacing: 2px;
-}
-.render:hover::before {
-  opacity: 1;
-  transform: scale(1, 1);
-}
-.render::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  transition: all 0.1s;
-  color: #8a8a8a;
-}
-.render:hover::after {
-  opacity: 0;
-  transform: scale(0.1, 1);
-}
+// .render {
+//   color: rgb(0, 0, 0);
+//   transition: all 0.3s;
+//   position: relative;
+//   font-size: 18px;
+//   text-align: center;
+// }
+// .render span {
+//   transition: all 0.5s;
+// }
+// .render::before {
+//   content: "";
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   z-index: 1;
+//   opacity: 0;
+//   transition: all 0.3s;
+//   border-bottom-width: 1px;
+//   border-top-width: 1px;
+//   border-bottom-style: solid;
+//   border-top-style: solid;
+//   border-bottom-color: green;
+//   border-top-color: green;
+//   transform: scale(2, 1);
+// }
+// .render:hover span {
+//   letter-spacing: 2px;
+// }
+// .render:hover::before {
+//   opacity: 1;
+//   transform: scale(1, 1);
+// }
+// .render::after {
+//   content: "";
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   z-index: 1;
+//   transition: all 0.1s;
+//   color: #8a8a8a;
+// }
+// .render:hover::after {
+//   opacity: 0;
+//   transform: scale(0.1, 1);
+// }
 
 @media only screen and (max-device-width: 480px) and (max-device-width: 800px) {
   #connect,

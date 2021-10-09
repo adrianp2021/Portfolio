@@ -7,6 +7,7 @@ const NavLinks = (props) => {
   return (
     <ul>
       <motion.li
+      className="render"
         intial={animateFrom}
         animate={animateTo}
         transition={{ delay: 0.1 }}
@@ -14,7 +15,7 @@ const NavLinks = (props) => {
           props.isMobile && props.closeMobileMenu();
         }}
       >
-        <a href="#about-container">About</a>
+        <a href="#about-container"  >About</a>
       </motion.li>
       <motion.li
         intial={animateFrom}
