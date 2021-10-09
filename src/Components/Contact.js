@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import contact from '../images/contact.svg'
 
 const Contact = () => {
   const [formValue, setFormValue] = useState({
@@ -20,12 +19,10 @@ const Contact = () => {
 
   return (
     <section className="page-section" id="contact-container">
-      {/* <img src={contact} alt=""/> */}
       <div className="get-in-touch section-box">
         <h1 id="section-title" className="owner">
           &lt; get in touch /&gt;
         </h1>
-
         <div id="contact-box">
           <form
             action="https://formspree.io/f/xdoypozv"
