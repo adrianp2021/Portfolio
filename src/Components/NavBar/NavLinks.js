@@ -7,20 +7,20 @@ const NavLinks = (props) => {
   return (
     <ul>
       <motion.li
-      className="render"
         intial={animateFrom}
         animate={animateTo}
-        transition={{ delay: 0.1 }}
+        transition={{ delay: 0.05 }}
         onClick={() => {
           props.isMobile && props.closeMobileMenu();
         }}
       >
-        <a href="#about-container"  >About</a>
+        <a href="#about-container">About</a>
       </motion.li>
+      
       <motion.li
         intial={animateFrom}
         animate={animateTo}
-        transition={{ delay: 0.2 }}
+        transition={{ delay: 0.1 }}
         onClick={() => {
           props.isMobile && props.closeMobileMenu();
         }}
@@ -30,7 +30,7 @@ const NavLinks = (props) => {
       <li
         intial={animateFrom}
         animate={animateTo}
-        transition={{ delay: 0.3 }}
+        transition={{ delay: 0.2 }}
         onClick={() => {
           props.isMobile && props.closeMobileMenu();
         }}
@@ -40,7 +40,7 @@ const NavLinks = (props) => {
       <motion.li
         intial={animateFrom}
         animate={animateTo}
-        transition={{ delay: 0.4 }}
+        transition={{ delay: 0.3 }}
         onClick={() => {
           props.isMobile && props.closeMobileMenu();
         }}
