@@ -211,9 +211,9 @@ html {
     font-size: 10px;
     color: rgb(0, 0, 0);
   }
-  // .section-box {
-  //   width: 90% !important;
-  // }
+  .section-box {
+    width: 90% !important;
+  }
 }
 
 #section-title {
@@ -410,7 +410,7 @@ html {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   display: flex;
   margin-bottom: 30px;
-  width: 100%;
+  // width: 100%;
 }
 .project-image {
   width: 550px;
