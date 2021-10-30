@@ -48,7 +48,9 @@ html {
 }
 .navbar nav ul li a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  // color: rgb(255, 255, 255);
+
+  color: rgb(122, 121, 121);
   margin: 2em;
   &:hover {
     color: red;
