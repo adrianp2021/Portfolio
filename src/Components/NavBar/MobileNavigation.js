@@ -2,7 +2,7 @@ import NavLinks from "./NavLinks";
 import { FiPlus } from "react-icons/fi";
 import { RiCloseFill } from "react-icons/ri";
 import { useState } from "react";
-
+import { motion } from "framer-motion";
 const MobileNavigation = () => {
   const [open, setOpen] = useState(false);
 
@@ -14,16 +14,16 @@ const MobileNavigation = () => {
   );
 
   const closeMobileMenu = () => setOpen(false);
-
+  
   return (
-    <nav className="MobileNavigation"
+    <motion.nav className="MobileNavigation"
 
     >
       {open ? closeIcon : hamburgerIcon}
       {open && <NavLinks isMobile={true}    
       
     closeMobileMenu={closeMobileMenu} />}
-    </nav>
+    </motion.nav>
   );
 };
 

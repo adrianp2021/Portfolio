@@ -35,7 +35,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(65, 61, 61);
+  background: rgb(0, 0, 0);
 }
 .navbar nav ul {
   list-style: none;
@@ -76,7 +76,7 @@ html {
     align-items: center;
     background: rgb(65, 61, 61);
     margin: 15px;
-    height: 50px;
+    height: 40px;
   }
   .navbar .MobileNavigation .hamburger {
     width: 35px;
@@ -96,7 +96,7 @@ html {
     right: 0;
     width: 100%;
     height: 100vh;
-    background: rgb(65, 61, 61);
+    background: rgb(0, 0, 0);
   }
   .navbar nav ul li {
     font-size: 30px;
@@ -105,11 +105,21 @@ html {
     margin: 25px;
     text-transform: uppercase;
   }
+  .navbar nav ul li a{
+    // color: rgb(88, 88, 88);
+    color: rgb(122, 121, 121);
+    font-weight: 500;
+  }
   .navbar {
     opacity: 1;
   }
   .navbar a:hover {
     color: #8c1d18;
+  }
+  svg{
+    z-index: 2;
+    position: fixed;
+    right: 20px;
   }
 }
 
@@ -223,7 +233,8 @@ html {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   background: black;
-  color: white;
+  // color: white;
+  color: rgb(122, 121, 121);
   // padding-top: 5px;
   // padding-bottom: 5px;
   text-align: center;
