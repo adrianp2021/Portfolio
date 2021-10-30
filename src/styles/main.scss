@@ -79,6 +79,7 @@ html {
     height: 40px;
   }
   .navbar .MobileNavigation .hamburger {
+    width: 25px;
     color: rgb(255, 255, 255);
     position: fixed;
     right: 5%;
@@ -95,13 +96,10 @@ html {
     width: 100%;
     height: 300px;
     background: rgb(65, 61, 61);
-    border-top: 2px solid rgba(199, 15, 15, 0.973);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   }
   .navbar nav ul li {
-    font-size: 100%;
+    font-size: 25px;
     letter-spacing: 2px;
-    // padding-left: 15%;
     color: black;
   }
   .navbar {
@@ -471,7 +469,6 @@ ul li {
 }
 ul li a {
   border-radius: 50%;
-  font-size: 90%px;
   color: #666;
   transition: 0.5s;
 }
