@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import PuffLoader from "react-spinners/PuffLoader";
+import React from "react";
 
 import About from "./About.js";
 import Experience from "./Experience.js";
@@ -26,17 +25,9 @@ const Home = () => {
     },
   };
 
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setLoading(true);
-  }, []);
-
   return (
     <>
       <motion.section variants={variants} initial={"hidden"} animate={"show"}>
-        {" "}
-        ?
         <section className="page-section" id="landing-container">
           <div className="section-box landing-box">
             <motion.div
@@ -110,8 +101,6 @@ const Home = () => {
         </section>
         <Contact />
         {/* <Connect /> */}
-        : (
-        <PuffLoader loading={loading} size={150} />)
       </motion.section>
     </>
   );
