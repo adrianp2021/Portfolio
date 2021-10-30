@@ -85,7 +85,6 @@ html {
     right: 5%;
     cursor: pointer;
     z-index: 30;
-    // transform: rotate(145deg);
   }
   .navbar nav ul {
     display: flex;
@@ -100,7 +99,7 @@ html {
     background: rgb(65, 61, 61);
   }
   .navbar nav ul li {
-    font-size: 35px;
+    font-size: 30px;
     letter-spacing: 2px;
     color: rgb(155, 127, 127);
     margin: 25px;
