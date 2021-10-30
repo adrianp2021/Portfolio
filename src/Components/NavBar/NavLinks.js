@@ -2,8 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const NavLinks = (props) => {
-  // const animateFrom = { opacity: 0, y: -80 };
-  // const animateTo = { opacity: 1, y: 0 };
   return (
     <motion.ul
       initial={{ opacity: 0 }}
@@ -17,9 +15,9 @@ const NavLinks = (props) => {
         }}
         animate={{
           opacity: 1,
-          y: 10,
+          y: 1,
         }}
-        transition={{ delay: 0.1 }}
+        transition={{ delay: 0.1, ease: "easeOut" }}
         onClick={() => {
           props.isMobile && props.closeMobileMenu();
         }}
@@ -34,9 +32,9 @@ const NavLinks = (props) => {
         }}
         animate={{
           opacity: 1,
-          y: 15,
+          y: 1,
         }}
-        transition={{ delay: 0.2 }}
+        transition={{ delay: 0.2, ease: "easeOut" }}
         onClick={() => {
           props.isMobile && props.closeMobileMenu();
         }}
@@ -51,9 +49,9 @@ const NavLinks = (props) => {
         }}
         animate={{
           opacity: 1,
-          y: 15,
+          y: 1,
         }}
-        transition={{ delay: 0.3 }}
+        transition={{ delay: 0.3, ease: "easeOut" }}
         onClick={() => {
           props.isMobile && props.closeMobileMenu();
         }}
@@ -68,9 +66,9 @@ const NavLinks = (props) => {
         }}
         animate={{
           opacity: 1,
-          y: 15,
+          y: 1,
         }}
-        transition={{ delay: 0.4 }}
+        transition={{ delay: 0.4, ease: "easeOut" }}
         onClick={() => {
           props.isMobile && props.closeMobileMenu();
         }}
