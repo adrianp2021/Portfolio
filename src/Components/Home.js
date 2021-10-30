@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import PuffLoader from "react-spinners/PuffLoader";
 
 import About from "./About.js";
 import Experience from "./Experience.js";
@@ -11,7 +12,6 @@ import Contact from "./Contact.js";
 import mac from "../images/coding.gif";
 
 import { motion } from "framer-motion";
-// import { Scroll } from "framer-motion"
 
 const Home = () => {
   const variants = {
@@ -26,13 +26,17 @@ const Home = () => {
     },
   };
 
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setLoading(true);
+  }, []);
+
   return (
     <>
-      <motion.section 
-      variants={variants} 
-      initial={"hidden"} 
-      animate={"show"}
-      >
+      <motion.section variants={variants} initial={"hidden"} animate={"show"}>
+        {" "}
+        ?
         <section className="page-section" id="landing-container">
           <div className="section-box landing-box">
             <motion.div
@@ -65,35 +69,32 @@ const Home = () => {
               </p>
             </motion.div>
             <motion.img
-              // animate="visible"
-              // initial="hidden"
-              // variants={{
-              //   hidden: {
-              //     scale: 0.5,
-              //     opacity: 0,
-              //   },
-              //   visible: {
-              //     scale: 1,
-              //     opacity: 1,
-              //     transition: {
-              //       duration: 1.4,
-              //       type: "tween",
-              //     },
-              //   },
-              // }}
+              animate="visible"
+              initial="hidden"
+              variants={{
+                hidden: {
+                  scale: 0.5,
+                  opacity: 0,
+                },
+                visible: {
+                  scale: 1,
+                  opacity: 1,
+                  transition: {
+                    duration: 1.4,
+                    type: "tween",
+                  },
+                },
+              }}
               src={mac}
               alt=""
               className="img"
             ></motion.img>
           </div>
         </section>
-
         <section className="page-section">
           <About />
         </section>
-
         <Experience />
-
         <section className="page-section" id="project-container">
           <div className="section-box" id="project-box">
             <h1 id="section-title" className="owner">
@@ -109,6 +110,8 @@ const Home = () => {
         </section>
         <Contact />
         {/* <Connect /> */}
+        : (
+        <PuffLoader loading={loading} size={150} />)
       </motion.section>
     </>
   );
